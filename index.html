@@ -487,4 +487,49 @@
       </div>
     </footer>
   </body>
+  <div class="modal-overlay">
+    <div class="modal">
+      <svg class="close-button" width="32" height="32">
+        <use href="./images/icons.svg#icon-person"></use>
+      </svg>
+      <form name="feedback-form" autocomplete="off" novalidate>
+        <h3 class="form-title">
+          Leave your contacts and we will call you back
+        </h3>
+        <div class="field filed-name">
+          <label for="user-name" class="label-1">Name</label>
+          <input type="text" id="user-name" class="form-input" />
+        </div>
+        <div class="field filed-phone">
+          <label for="user-phone" class="label-1">Phone</label>
+          <input type="tel" id="user-phone" class="form-input" />
+        </div>
+        <div class="field filed-email">
+          <label for="user-Email" class="label-1">Email</label>
+          <input type="email" id="user-Email" class="form-input" />
+        </div>
+        <div class="filed-comment">
+          <label class="label-1"
+            >Comment
+            <textarea
+              class="text-comment"
+              name="comment"
+              rows="5"
+              placeholder="Text input"
+            ></textarea>
+          </label>
+        </div>
+        <div class="checkbox">
+          <label class="checkbox-label"><input type="checkbox" /></label>
+          <p class="checkbox-text">
+            I accept the terms and conditions of the
+            <span class="privacy-policy"
+              ><a href="" class="p-p-link">Privacy Policy</a>
+            </span>
+          </p>
+        </div>
+        <button type="submit" class="button-send" id="launch-btn">Send</button>
+      </form>
+    </div>
+  </div>
 </html>
