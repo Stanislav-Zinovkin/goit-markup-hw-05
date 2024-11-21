@@ -163,10 +163,14 @@ address {
   text-align: center;
   color: #fff;
 }
-.button:hover {
+.button,
+.subscribe-btn,
+.button-send:hover {
   background-color: #404bbf;
 }
-.button:focus {
+.button,
+.subscribe-btn,
+.button-send:focus {
   background-color: #404bbf;
 }
 
@@ -420,7 +424,8 @@ address {
   align-items: baseline;
 }
 
-.text-sm {
+.text-sm,
+.text-form {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -455,6 +460,49 @@ address {
 }
 .icon-soc {
   fill: #f4f4fd;
+}
+.bottom-form {
+  margin-left: 80px;
+}
+.foot-button {
+  margin-top: auto;
+}
+.subscribe-btn {
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin-left: 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.icon-subs {
+  fill: #fff;
+}
+.foot-input {
+  background-color: #2e2f42;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+}
+.foot-input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.04em;
+  color: #fff;
 }
 .modal-overlay {
   background-color: rgba(46, 47, 66, 0.4);
@@ -504,6 +552,9 @@ address {
 .close-button {
   fill: #2e2f42;
 }
+.close-btn:hover {
+  cursor: pointer;
+}
 label {
   display: flex;
   flex-direction: column;
@@ -520,11 +571,13 @@ label {
   color: #8e8f99;
 }
 textarea {
+  margin: 4px auto 16px auto;
   resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
   height: 120px;
+  background-color: #fcfcfc;
 }
 .field {
   display: flex;
@@ -535,7 +588,7 @@ textarea {
 .form-input {
   border: none;
   outline: none;
-
+  background-color: #fcfcfc;
   width: 322px;
 }
 .input-wrapper {
@@ -543,12 +596,31 @@ textarea {
   align-items: center;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 10px 0px 10px 15px;
+}
+.input-wrapper:hover,
+.input-wrapper:focus-within {
+  border-color: #4d5ae5;
+}
+textarea:hover,
+textarea:focus-within {
+  border-color: #4d5ae5;
+}
+.input-wrapper:focus-within .icon-email {
+  fill: #4d5ae5;
+}
+.input-wrapper:focus-within .icon-phone {
+  fill: #4d5ae5;
+}
+.input-wrapper:focus-within .icon-person {
+  fill: #4d5ae5;
 }
 .icon-email,
 .icon-person,
 .icon-phone {
   fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-send {
   display: block;
@@ -573,7 +645,6 @@ textarea {
 .checkbox {
   display: flex;
   gap: 8px;
-  margin-top: 16px;
 }
 .p-p-link {
   text-decoration: underline;
