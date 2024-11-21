@@ -468,6 +468,19 @@ address {
   justify-content: center;
   align-items: center;
 }
+
+.modal {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+  border-radius: 4px;
+  width: 408px;
+}
+.container-2 {
+  margin: 0 auto;
+
+  max-width: 360px;
+}
 .form-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -478,12 +491,15 @@ address {
   color: #2e2f42;
   margin-bottom: 16px;
 }
-.modal {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2);
-  background: #fcfcfc;
-  border-radius: 4px;
-  max-width: 408px;
+.close-btn {
+  justify-content: center;
+
+  margin: 24px 24px 24px 360px;
+  border-radius: 100%;
+  border: 1px rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
+  width: 24px;
+  height: 24px;
 }
 .close-button {
   fill: #2e2f42;
@@ -504,10 +520,11 @@ label {
   color: #8e8f99;
 }
 textarea {
-  resize: 0;
+  resize: none;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   width: 360px;
+  height: 120px;
 }
 .field {
   display: flex;
@@ -516,11 +533,23 @@ textarea {
   margin-bottom: 8px;
 }
 .form-input {
+  border: none;
+  outline: none;
+
+  width: 322px;
+}
+.input-wrapper {
+  display: flex;
+  align-items: center;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  width: 360px;
+  padding: 10px 0px 10px 15px;
 }
-
+.icon-email,
+.icon-person,
+.icon-phone {
+  fill: #2e2f42;
+}
 .button-send {
   display: block;
   padding: 16px 32px;
@@ -545,4 +574,7 @@ textarea {
   display: flex;
   gap: 8px;
   margin-top: 16px;
+}
+.p-p-link {
+  text-decoration: underline;
 }
