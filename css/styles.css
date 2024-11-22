@@ -553,7 +553,12 @@ address {
   fill: #2e2f42;
 }
 .close-btn:hover {
+  border-color: #4d5ae5;
+  background-color: #4d5ae5;
   cursor: pointer;
+}
+.close-btn:hover .close-button {
+  fill: #fff;
 }
 label {
   display: flex;
@@ -578,6 +583,8 @@ textarea {
   width: 360px;
   height: 120px;
   background-color: #fcfcfc;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .field {
   display: flex;
