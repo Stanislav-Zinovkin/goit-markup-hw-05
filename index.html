@@ -486,7 +486,7 @@
         </div>
         <div class="bottom-form">
           <p class="text-form">Subscribe</p>
-          <form action="" class="form-footer">
+          <form class="form-footer">
             <label for="email" class="label-footer-form">
               <input
                 name="email"
@@ -508,82 +508,84 @@
         </div>
       </div>
     </footer>
-  </body>
-  <div class="modal-overlay">
-    <div class="modal">
-      <button type="button" class="close-btn">
-        <svg class="close-button" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
-      <p class="form-title">Leave your contacts and we will call you back</p>
-      <form class="form" name="feedbackForm" autocomplete="on" novalidate>
-        <div class="field filed-name">
-          <label for="userName" class="label-1">Name</label>
-          <div class="input-wrapper">
-            <input
-              name="userName"
-              type="text"
-              id="userName"
-              class="form-input"
-            />
-            <svg class="iconPerson" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </div>
-        </div>
-        <div class="field filedPhone">
-          <label for="userPhone" class="label-1">Phone</label>
-          <div class="input-wrapper">
-            <svg class="icon-phone" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-            <input type="tel" id="userPhone" class="form-input" />
-          </div>
-        </div>
-        <div class="field filed-email">
-          <label for="userEmail" class="label-1">Email</label>
-          <div class="input-wrapper">
-            <svg class="icon-email" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-            <input type="email" id="userEmail" class="form-input" />
-          </div>
-        </div>
-        <div class="filed-comment">
-          <label class="label-1" for="user-comment"
-            >Comment
-            <textarea
-              id="user-comment"
-              class="text-comment"
-              name="user-comment"
-              placeholder="Text input"
-            ></textarea>
-          </label>
-        </div>
-        <div class="checkbox">
-          <input
-            class="visually-hidden"
-            type="checkbox"
-            id="user-privacy"
-            name="user-privacy"
-            value="true"
-          />
-          <label class="checkbox-label" for="user-privacy">
-            <span class="vector"
-              ><svg class="icon-vector" width="10" height="8">
-                <use href="./images/icons.svg#icon-vector"></use>
+    <div class="modal-overlay">
+      <div class="modal">
+        <button type="button" class="close-btn">
+          <svg class="close-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="form-title">Leave your contacts and we will call you back</p>
+        <form class="form" name="feedbackForm" autocomplete="on" novalidate>
+          <div class="field filed-name">
+            <label for="userName" class="label-1">Name</label>
+            <div class="input-wrapper">
+              <input
+                name="userName"
+                type="text"
+                id="userName"
+                class="form-input"
+              />
+              <svg class="iconPerson" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
-            </span>
-            I accept the terms and conditions of the
+            </div>
+          </div>
+          <div class="field filedPhone">
+            <label for="userPhone" class="label-1">Phone</label>
+            <div class="input-wrapper">
+              <svg class="icon-phone" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input type="tel" id="userPhone" class="form-input" />
+            </div>
+          </div>
+          <div class="field filed-email">
+            <label for="userEmail" class="label-1">Email</label>
+            <div class="input-wrapper">
+              <svg class="icon-email" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+              <input type="email" id="userEmail" class="form-input" />
+            </div>
+          </div>
+          <div class="filed-comment">
+            <label class="label-1" for="user-comment"
+              >Comment
+              <textarea
+                id="user-comment"
+                class="text-comment"
+                name="user-comment"
+                placeholder="Text input"
+              ></textarea>
+            </label>
+          </div>
+          <div class="checkbox">
+            <input
+              class="visually-hidden"
+              type="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
+            />
+            <label class="checkbox-label" for="user-privacy">
+              <span class="vector"
+                ><svg class="icon-vector" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
 
-            <span class="privacy-policy"
-              ><a href="" class="p-p-link">Privacy Policy</a>
-            </span>
-          </label>
-        </div>
-        <button type="submit" class="button-send" id="launch-btn">Send</button>
-      </form>
+              <span class="privacy-policy"
+                ><a href="" class="p-p-link">Privacy Policy</a>
+              </span>
+            </label>
+          </div>
+          <button type="submit" class="button-send" id="launch-btn">
+            Send
+          </button>
+        </form>
+      </div>
     </div>
-  </div>
+  </body>
 </html>
