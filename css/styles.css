@@ -532,7 +532,7 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   border-radius: 50%;
-  border: 1px rgba(0, 0, 0, 0.1);
+
   background-color: #e7e9fc;
 
   cursor: pointer;
@@ -545,7 +545,7 @@ address {
   fill: #2e2f42;
 }
 .close-btn:hover {
-  fill: #fff;
+  fill: #ffffff;
   border: none;
   background-color: #404bbf;
 }
@@ -554,7 +554,7 @@ address {
   background-color: #404bbf;
 }
 .close-button:hover {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .form-title {
