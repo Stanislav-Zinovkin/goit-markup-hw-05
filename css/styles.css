@@ -545,7 +545,6 @@ address {
   fill: #2e2f42;
 }
 .close-btn:hover {
-  fill: #ffffff;
   border: none;
   background-color: #404bbf;
 }
@@ -553,7 +552,8 @@ address {
   border: none;
   background-color: #404bbf;
 }
-.close-button:hover {
+.close-btn:hover .close-button,
+.close-btn:focus .close-button {
   fill: #ffffff;
 }
 
@@ -630,18 +630,11 @@ textarea:hover,
 textarea:focus-within {
   border-color: #4d5ae5;
 }
-.input-wrapper:focus-within .icon-email {
+.input-wrapper:focus-within .icons {
   fill: #4d5ae5;
 }
-.input-wrapper:focus-within .icon-phone {
-  fill: #4d5ae5;
-}
-.input-wrapper:focus-within .icon-person {
-  fill: #4d5ae5;
-}
-.icon-email,
-.icon-person,
-.icon-phone {
+
+.icons {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
@@ -674,6 +667,7 @@ textarea:focus-within {
   letter-spacing: 0.04em;
   color: #fff;
 }
+
 .button-send {
   display: block;
   margin: 0 auto;
@@ -688,7 +682,7 @@ textarea:focus-within {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   text-align: center;
   cursor: pointer;
