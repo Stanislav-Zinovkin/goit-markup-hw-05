@@ -470,6 +470,7 @@ address {
 .subscribe-btn {
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
@@ -544,6 +545,7 @@ address {
   fill: #2e2f42;
 }
 .close-btn:hover {
+  fill: #fff;
   border: none;
   background-color: #404bbf;
 }
@@ -551,12 +553,10 @@ address {
   border: none;
   background-color: #404bbf;
 }
-.close-btn:hover .close-button {
+.close-button:hover {
   fill: #fff;
 }
-.close-button:focus {
-  fill: #fff;
-}
+
 .form-title {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -588,7 +588,7 @@ label {
   flex-direction: column;
 }
 
-.label-1,
+.label,
 .text-comment::placeholder {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -598,6 +598,9 @@ label {
   color: #8e8f99;
   display: block;
   margin-bottom: 4px;
+}
+.filed-comment {
+  margin-bottom: 16px;
 }
 .input-wrapper {
   position: relative;
@@ -633,11 +636,11 @@ textarea:focus-within {
 .input-wrapper:focus-within .icon-phone {
   fill: #4d5ae5;
 }
-.input-wrapper:focus-within .iconPerson {
+.input-wrapper:focus-within .icon-person {
   fill: #4d5ae5;
 }
 .icon-email,
-.iconPerson,
+.icon-person,
 .icon-phone {
   left: 16px;
   top: 50%;
@@ -685,6 +688,7 @@ textarea:focus-within {
   letter-spacing: 0.04em;
   color: #fff;
   background-color: #4d5ae5;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   text-align: center;
   cursor: pointer;
@@ -715,7 +719,7 @@ textarea:focus-within {
   justify-content: center;
   fill: transparent;
 }
-.checkbox:checked + .vector {
+.visually-hidden:checked + .checkbox-label .vector {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
